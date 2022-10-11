@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">MyTomorrowProject</string>
+    <string name="ID_hint">아이디</string>
+    <string name="PASS_hint">비밀번호</string>
+    <string name="PASS_check">비밀번호 확인</string>
+    <string name="LOGIN_button">로그인</string>
+    <string name="RAGISTER_button">가입하기</string>
+    <string name="RAGISTER_">회원가입</string>
+    <string name="app_name">tomorrow</string>
 </resources>
