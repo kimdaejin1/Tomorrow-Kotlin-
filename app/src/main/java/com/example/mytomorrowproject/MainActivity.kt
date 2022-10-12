@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
 
             if(id==savedId&&pw==savePass){
                 dialog("success")
+                val intent =Intent(this,DaialryActivity::class.java)
+                startActivity(intent)
             }
             else{
                 dialog("fail")
