@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/frame2">
 
 
     <EditText
         android:id="@+id/edit_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="250dp"
         android:ems="10"
         android:hint="@string/ID_hint"
         android:inputType="textPersonName"
@@ -23,7 +24,7 @@
         android:id="@+id/edit_PASS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="35dp"
         android:ems="10"
         android:hint="@string/PASS_hint"
         android:inputType="textPassword"
