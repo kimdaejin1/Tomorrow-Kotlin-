@@ -5,30 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/frame2">
+    android:background="@drawable/frame2"
+    android:gravity="center">
 
 
     <EditText
         android:id="@+id/edit_ID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="250dp"
-        android:ems="10"
         android:hint="@string/ID_hint"
+        android:background="@drawable/round2"
         android:inputType="textPersonName"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.502"/>
     <EditText
         android:id="@+id/edit_PASS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="35dp"
-        android:ems="10"
         android:hint="@string/PASS_hint"
         android:textStyle="bold"
         android:inputType="textPassword"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/round2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_ID"
