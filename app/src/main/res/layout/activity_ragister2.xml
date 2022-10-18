@@ -9,11 +9,11 @@
 
     <EditText
         android:id="@+id/edit_NewID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="200dp"
-        android:ems="10"
         android:hint="@string/ID_hint"
+        android:background="@drawable/round2"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,11 +23,11 @@
 
     <EditText
         android:id="@+id/edit_NewPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="35dp"
-        android:ems="10"
         android:hint="@string/PASS_hint"
+        android:background="@drawable/round2"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,11 +36,12 @@
 
     <EditText
         android:id="@+id/check_Pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="35dp"
         android:ems="10"
         android:hint="@string/PASS_check"
+        android:background="@drawable/round2"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
