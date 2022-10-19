@@ -17,9 +17,11 @@ class RagisterActivity2 : AppCompatActivity() {
     var isPWSame = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "회원가입 버튼")
         setContentView(R.layout.activity_ragister2)
+
         button_RAGISTER.setOnClickListener {
-            Log.d(TAG, "회원가입 버튼")
+
 
             val id = edit_NewID.toString()
             val pw = edit_NewPass.toString()

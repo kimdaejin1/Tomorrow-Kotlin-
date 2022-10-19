@@ -36,9 +36,10 @@ class MainActivity : AppCompatActivity() {
         button_RAGISTER.setOnClickListener {
             val intent = Intent(this,RagisterActivity2::class.java)
             startActivity(intent)
+            Log.d("TAG", "sss")
         }
     }
-    fun dialog(type: String){
+    private fun dialog(type: String){
         var dialog= AlertDialog.Builder(this)
 
         if (type.equals("success")) {
@@ -50,12 +51,10 @@ class MainActivity : AppCompatActivity() {
             dialog.setMessage("아이디와 비밀번호를 확인해주세요")
         }
 
-        var dialog_listener=object: DialogInterface.OnClickListener{
-            override fun onClick(dialog: DialogInterface?, which: Int){
-                when(which){
-                    DialogInterface.BUTTON_POSITIVE->
-                        Log.d(TAG,"")
-                }
+        var dialog_listener= DialogInterface.OnClickListener { dialog, which ->
+            when(which){
+                DialogInterface.BUTTON_POSITIVE->
+                    Log.d(TAG,"")
             }
         }
         dialog.setPositiveButton("확인",dialog_listener)
