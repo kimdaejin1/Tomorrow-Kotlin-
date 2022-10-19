@@ -9,4 +9,5 @@
     <string name="Planner_Hint">할 일을 입력하세요</string>
     <string name="Planner_button">기입</string>
     <string name="Daialry_edit">내용을 입력하세요</string>
+    <string name="Daialry_name">ToDay_Daialry</string>
 </resources>
