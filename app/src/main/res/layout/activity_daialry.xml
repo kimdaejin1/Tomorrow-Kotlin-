@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DaialryActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/rectengle1">
 
     <CalendarView
         android:id="@+id/calendarView"
@@ -19,7 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintHorizontal_bias="0.488" />
+        app:layout_constraintHorizontal_bias="0.488"
+        android:background="@color/white"/>
 
     <TextView
         android:id="@+id/diaryTextView"
