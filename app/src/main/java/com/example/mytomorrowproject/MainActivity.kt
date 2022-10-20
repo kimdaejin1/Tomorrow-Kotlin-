@@ -42,16 +42,16 @@ class MainActivity : AppCompatActivity() {
     private fun dialog(type: String){
         var dialog= AlertDialog.Builder(this)
 
-        if (type.equals("success")) {
+        if (type == "success") {
             dialog.setTitle("로그인 성공")
             dialog.setMessage("로그인 성공!!")
         }
-        else if(type.equals("fail")){
+        else if(type == "fail"){
             dialog.setTitle("로그인 실패")
             dialog.setMessage("아이디와 비밀번호를 확인해주세요")
         }
 
-        var dialog_listener= DialogInterface.OnClickListener { dialog, which ->
+        var dialog_listener= DialogInterface.OnClickListener { _, which ->
             when(which){
                 DialogInterface.BUTTON_POSITIVE->
                     Log.d(TAG,"")

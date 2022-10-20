@@ -60,21 +60,19 @@ class RagisterActivity2 : AppCompatActivity() {
     fun dialog(type: String){
         val dialog= AlertDialog.Builder(this)
 
-        if (type.equals("blank")){
+        if (type == "blank"){
             dialog.setTitle("회원가입 실패")
             dialog.setMessage("입력칸을 모두 입력해주세요")
         }
-        else if (type.equals("not same")){
+        else if (type == "not same"){
             dialog.setTitle("회원가입 실패")
             dialog.setMessage("비밀번호가 같은지 다시 한번 확인해주세요")
         }
 
-        val dialog_listener= object : DialogInterface.OnClickListener {
-            override fun onClick(dialog: DialogInterface?, which: Int){
-                when(which){
-                    DialogInterface.BUTTON_POSITIVE ->
-                        Log.d(TAG,"다이얼로그")
-                }
+        val dialog_listener= DialogInterface.OnClickListener { _, which ->
+            when(which){
+                DialogInterface.BUTTON_POSITIVE ->
+                    Log.d(TAG,"다이얼로그")
             }
         }
         dialog.setPositiveButton("확인",dialog_listener)
